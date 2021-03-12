@@ -1,32 +1,36 @@
 # Lilacs_WomenKit
 
-A project created by Team Lilacs for SheHacks 2021.
-
-
-To setup virtual environment, run the following commands:
+**A project created by Team Lilacs for SheHacks 2021.**
+- 
+### To setup virtual environment, run the following commands:
 pipenv install
 
-To activate virtual environment run:
+### To activate virtual environment run:
 pipenv shell
 
-Installing django and djangorest framework:
+### Installing django and djangorest framework:
+```
 pipenv install django
 pipenv install djangorestframework
 pipenv install psycopg2
+pipenv install gunicorn
+pipenv install django-heroku
+```
 
-Lock pipfile:
+### Lock pipfile:
 pipenv lock
+---
+### Install PostgreSQL
+-> _Install PostgreSQL (latest version) from https://www.postgresql.org/download/_
 
-Install PostgreSQL
--> Install PostgreSQL (latest version) from https://www.postgresql.org/download/
+-> _Setup postgres in your system according to your OS. Eg: for manjaro it would be something like this https://dev.to/tusharsadhwani/how-to-setup-postgresql-on-manjaro-linux-arch-412l_
 
--> Setup postgres in your system according to your OS. Eg: for manjaro it would be something like this https://dev.to/tusharsadhwani/how-to-setup-postgresql-on-manjaro-linux-arch-412l
-
--> Create a new database in your Postgres server and name it womenkit.
+-> _Create a new database in your Postgres server and name it womenkit._
             create database womenkit;
             \c womenkit
-
-Edit Database configurations with your PostgreSQL configurations.
+---
+## Edit Database configurations with your PostgreSQL configurations.
+```
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -37,13 +41,15 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-
-Run the server
- Make migrations
+```
+--- 
+## Run the server
+ ### Make migrations
+ ```
   python manage.py makemigrations
   python manage.py migrate
-  
- Run the server
+ ```
+ ### Run the server
   python manage.py runserver
 
 
