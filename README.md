@@ -49,6 +49,7 @@ DATABASES = {
 ```
 --- 
 ## Run the server
+
  ### Make migrations
  ```
   python manage.py makemigrations
