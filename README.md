@@ -18,16 +18,21 @@ pipenv install django-heroku
 ```
 
 ### Lock pipfile:
+```
 pipenv lock
+```
+
 ---
 ### Install PostgreSQL
--> _Install PostgreSQL (latest version) from https://www.postgresql.org/download/_
+ _Install PostgreSQL (latest version) from https://www.postgresql.org/download/_
 
--> _Setup postgres in your system according to your OS. Eg: for manjaro it would be something like this https://dev.to/tusharsadhwani/how-to-setup-postgresql-on-manjaro-linux-arch-412l_
+ _Setup postgres in your system according to your OS. Eg: for manjaro it would be something like this https://dev.to/tusharsadhwani/how-to-setup-postgresql-on-manjaro-linux-arch-412l_
 
--> _Create a new database in your Postgres server and name it womenkit._
+ _Create a new database in your Postgres server and name it womenkit._
+ ```
             create database womenkit;
             \c womenkit
+  ```
 ---
 ## Edit Database configurations with your PostgreSQL configurations.
 ```
