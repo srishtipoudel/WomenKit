@@ -1,7 +1,9 @@
-# Lilacs_WomenKit
+# WomenKit
 
 **A project created by Team Lilacs for SheHacks 2021.**
+**Find the site running on https://lilacs-womenkit.herokuapp.com/**
 - 
+
 ### To setup virtual environment, run the following commands:
 pipenv install
 
@@ -20,6 +22,10 @@ pipenv install django-heroku
 ### Lock pipfile:
 ```
 pipenv lock
+```
+### Alternatively you can directly install everything from Pipfile.lock by running the command: 
+```
+pipenv install
 ```
 
 ---
