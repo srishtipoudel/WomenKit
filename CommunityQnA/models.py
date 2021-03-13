@@ -2,14 +2,14 @@ from django.db import models
 
 # Create your models here.
 class QnA(models.Model):
-    question_no = models.IntegerField(unique=True)
+    question_no = models.AutoField(primary_key=True)
     question = models.CharField(max_length=5000, default='Ask Anything')
     posted_on = models.DateTimeField(auto_now_add=True)
     is_answered = models.BooleanField('answer_status', default=False)
-    answer = models.CharField(max_length=5000, blank = True) 
-    
+    answer = models.CharField(max_length=5000, blank = True, null = True) 
+
     class Meta:
         verbose_name = "QnA"
-        verbose_name_plural = "QnAs"
+        verbose_name_plural = "QnA"
 
 
